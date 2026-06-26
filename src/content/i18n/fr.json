@@ -1,0 +1,164 @@
+{
+  "general": {
+    "brandName": "BioGenAI",
+    "brandAccent": "Solutions",
+    "tagline": "Des solutions d'IA et de bio-informatique avancées et évolutives pour la médecine de précision et l'innovation en santé.",
+    "capabilities": [
+      "Grands Modèles de Langage (LLMs)",
+      "Génération Augmentée par Récupération (RAG)",
+      "Systèmes d'IA Agentique",
+      "Machine Learning et Deep Learning",
+      "Bio-informatique et Génomique",
+      "Ingénierie des Données"
+    ]
+  },
+  "hero": {
+    "eyebrow": "IA et Bio-informatique pour la Médecine de Précision",
+    "titleLead": "Des solutions",
+    "titleHighlight": "GenAI intelligentes",
+    "titleTrail": "au service de la santé et des sciences de la vie",
+    "subtitle": "BioGenAI Solutions développe des solutions avancées et évolutives d'Intelligence Artificielle et de bio-informatique qui relient la médecine de précision à une IA responsable, pour éclairer des décisions qui changent des vies et accélérer la découverte scientifique.",
+    "ctaPrimaryLabel": "Démarrer une conversation",
+    "ctaSecondaryLabel": "Découvrir les solutions",
+    "stats": [
+      { "value": "25+", "label": "ans d'ingénierie logicielle" },
+      { "value": "8+", "label": "ans en ML et GenAI" },
+      { "value": "HL7", "label": "interopérabilité en santé" }
+    ],
+    "tags": ["LLMs et RAG", "IA Agentique", "Génomique", "Deep Learning"]
+  },
+  "solutions": {
+    "eyebrow": "Solutions",
+    "heading": "Des solutions conçues pour un impact scientifique et clinique",
+    "lead": "Une IA évolutive et responsable, adaptée aux exigences complexes de la santé, des biotechnologies, de l'industrie pharmaceutique et de la recherche, des données brutes aux informations exploitables.",
+    "items": [
+      { "icon": "precision", "title": "IA pour la Médecine de Précision", "description": "Des modèles personnalisés qui transforment les données génomiques et cliniques en décisions propres à chaque patient, qui changent des vies." },
+      { "icon": "genomics", "title": "Bio-informatique et Génomique", "description": "Des pipelines avancés pour l'analyse de séquençage, la découverte de variants et la biologie computationnelle à grande échelle." },
+      { "icon": "llm", "title": "IA Générative et Agentique", "description": "Des systèmes LLM, RAG et d'agents autonomes capables de raisonner sur des données scientifiques et d'entreprise complexes." },
+      { "icon": "hl7", "title": "Interopérabilité en Santé", "description": "Une intégration fondée sur HL7 qui connecte les systèmes, fluidifie les processus et améliore les résultats pour les patients." },
+      { "icon": "data", "title": "Ingénierie des Données", "description": "Une infrastructure de données robuste et évolutive qui alimente des analyses fiables et le ML en production." },
+      { "icon": "ml", "title": "Machine Learning et Deep Learning", "description": "Des modèles prédictifs et de diagnostic conçus pour la précision, la transparence et le déploiement en conditions réelles." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Un conseil qui transforme la complexité en clarté",
+    "lead": "Nous aidons les établissements de santé, les biotechnologies, les organisations pharmaceutiques, les instituts de recherche et les entreprises à exploiter l'IA pour accélérer la découverte et révéler des informations clés.",
+    "items": [
+      { "number": "01", "title": "Stratégie et Conseil en IA", "description": "Feuilles de route, études de faisabilité et architecture pour déployer une IA responsable au ROI mesurable." },
+      { "number": "02", "title": "Développement de Modèles Sur Mesure", "description": "Conception, entraînement et déploiement de bout en bout de systèmes de ML, deep learning et GenAI." },
+      { "number": "03", "title": "Ingénierie Bio-informatique", "description": "Pipelines génomiques, biostatistiques et biologie computationnelle conçus pour l'échelle et la rigueur." },
+      { "number": "04", "title": "Intégration des Données de Santé", "description": "Interopérabilité HL7 et ingénierie des données pour unifier des systèmes cliniques fragmentés." }
+    ]
+  },
+  "principles": {
+    "eyebrow": "Ce qui nous anime",
+    "heading": "Vision, Mission et Philosophie",
+    "visionLabel": "Vision",
+    "missionLabel": "Mission",
+    "philosophyLabel": "Philosophie",
+    "vision": "Révolutionner la santé et les sciences de la vie en offrant des solutions GenAI intelligentes et personnalisées qui éclairent des décisions qui changent des vies.",
+    "mission": "Relier la médecine de précision à des solutions GenAI responsables pour offrir des soins personnalisés et faire progresser les sciences de la vie.",
+    "philosophy": "Nous concevons une GenAI centrée sur l'humain et ancrée dans l'éthique, qui personnalise les soins, éclaire les décisions et favorise la collaboration pour transformer ensemble la santé et les sciences de la vie."
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "heading": "Un cabinet spécialisé en IA, Bio-informatique et Technologies de la Santé",
+    "paragraphs": [
+      "BioGenAI Solutions est un cabinet de conseil spécialisé en Intelligence Artificielle, Bio-informatique et Technologies de la Santé, dédié à la transformation de la santé et des sciences de la vie par une innovation responsable et centrée sur l'humain.",
+      "Nous aidons les établissements de santé, les biotechnologies, les organisations pharmaceutiques, les instituts de recherche et les entreprises à exploiter la puissance des LLMs, du RAG, de l'IA Agentique, du Machine Learning, du Deep Learning, de l'Ingénierie des Données, de la Bio-informatique, de la Génomique et de l'interopérabilité HL7 pour accélérer la découverte, améliorer les résultats des patients et révéler des informations exploitables à partir de données complexes."
+    ],
+    "founderInitials": "EB",
+    "founderName": "Ernest Bonat, Ph.D.",
+    "founderRole": "Fondateur et Dirigeant — Professeur de Science des Données, Ingénieur IA Senior, Scientifique en Bio-informatique",
+    "founderBio": "Plus de 25 ans d'expérience en ingénierie logicielle et plus de 8 ans à développer des solutions avancées de Machine Learning, d'IA Générative, d'IA Agentique, de Biostatistique, de Bio-informatique et de Biologie Computationnelle.",
+    "stats": [
+      { "value": "25+", "label": "Années d'ingénierie logicielle" },
+      { "value": "8+", "label": "Années en ML et IA Générative" },
+      { "value": "5", "label": "Secteurs servis" },
+      { "value": "24h", "label": "Engagement de délai de réponse" }
+    ]
+  },
+  "research": {
+    "eyebrow": "Recherche",
+    "heading": "Recherches publiées et leadership d'opinion",
+    "lead": "Des perspectives d'expert sur l'IA, la biostatistique, la bio-informatique et la biologie computationnelle.",
+    "items": [
+      { "tag": "Medium · Article", "title": "Artificial Intelligence Applications in Biostatistics, Bioinformatics and Computational Biology", "author": "Par Ernest Bonat, Ph.D.", "url": "https://ernest-bonat.medium.com/machine-learning-applications-in-genomics-life-sciences-by-ernest-bonat-ph-d-83598e67ccbc" }
+    ],
+    "comingSoonTag": "Bientôt disponible",
+    "comingSoonTitle": "D'autres publications sur la GenAI et la médecine de précision",
+    "comingSoonText": "De nouvelles recherches sont publiées régulièrement."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Envoyez-nous un message",
+    "lead": "Remplissez le formulaire et notre équipe vous répondra sous 24 heures.",
+    "email": "ernest.bonat@biogenaisolutions.com",
+    "responseTime": "Réponse sous 24 heures",
+    "interests": [
+      "IA pour la Médecine de Précision",
+      "Bio-informatique et Génomique",
+      "IA Générative et Agentique",
+      "Interopérabilité en Santé (HL7)",
+      "Ingénierie des Données",
+      "Machine Learning et Deep Learning",
+      "Stratégie et Conseil en IA",
+      "Autre"
+    ],
+    "disclaimer": "Chez BioGenAI Solutions, nous accordons une grande importance à votre confiance et nous nous engageons à préserver la confidentialité et la sécurité de vos informations. Toute information transmise via notre site web est utilisée exclusivement pour répondre à vos demandes, fournir des services de conseil professionnels et vous tenir informé des évolutions pertinentes en matière d'Intelligence Artificielle, de Biostatistique, de Bio-informatique, de Médecine de Précision, de Technologies de la Santé et de Sciences de la Vie. Vous pouvez vous désabonner des communications à tout moment. Veuillez consulter notre Politique de Confidentialité pour en savoir plus sur nos pratiques en matière de protection des données et de vie privée."
+  },
+  "carousel": {
+    "eyebrow": "Qui nous servons",
+    "heading": "Les secteurs que nous accompagnons",
+    "lead": "La confiance de tout l'écosystème de la santé et des sciences de la vie.",
+    "slides": [
+      { "title": "Établissements de Santé", "description": "Aide à la décision clinique, connaissance des patients et interopérabilité HL7 qui améliorent les résultats." },
+      { "title": "Biotechnologies", "description": "Pipelines génomiques et machine learning qui accélèrent la découverte, du laboratoire à l'insight." },
+      { "title": "Industrie Pharmaceutique", "description": "L'IA en R&D, essais cliniques et opérations pour des décisions plus rapides et fondées sur les données." },
+      { "title": "Instituts de Recherche", "description": "Bio-informatique et biologie computationnelle évolutives pour une science rigoureuse et reproductible." },
+      { "title": "Entreprises", "description": "Systèmes LLM, RAG et agentiques qui révèlent la valeur de données complexes à grande échelle." }
+    ]
+  },
+  "ui": {
+    "menuLabel": "Menu",
+    "searchPlaceholder": "Rechercher sur le site…",
+    "searchNoResults": "Aucun résultat trouvé",
+    "searchLabel": "Rechercher",
+    "nav": { "home": "Accueil", "solutions": "Solutions", "services": "Services", "research": "Recherche", "news": "Actualités", "about": "À propos", "contact": "Contact", "contactCta": "Nous contacter" },
+    "capabilitiesLabel": "Compétences clés",
+    "readPaper": "Lire l'article",
+    "readMore": "Lire la suite",
+    "newsHeading": "Les actualités de BioGenAI Solutions",
+    "newsLead": "Annonces et nouveautés en IA, médecine de précision et sciences de la vie.",
+    "newsEmptyTitle": "Des nouveautés arrivent bientôt",
+    "newsEmptyText": "Nous préparons des annonces sur nos dernières solutions et recherches. Revenez bientôt ou contactez-nous pour rester informé.",
+    "newsKeepUpdated": "Tenez-moi informé",
+    "backToNews": "← Retour aux actualités",
+    "backToHome": "← Retour à l'accueil",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "E-mail",
+      "jobTitle": "Fonction",
+      "company": "Entreprise",
+      "interest": "Sujet d'intérêt",
+      "interestPlaceholder": "Sélectionnez une option",
+      "comments": "Commentaires",
+      "commentsPlaceholder": "Parlez-nous de votre projet ou de votre question…",
+      "recaptcha": "Protégé par reCAPTCHA",
+      "submit": "Envoyer",
+      "success": "Merci — votre message est prêt. Nous vous répondrons sous 24 heures."
+    },
+    "footer": {
+      "explore": "Explorer",
+      "company": "Entreprise",
+      "legal": "Mentions légales",
+      "visionMission": "Vision et Mission",
+      "rights": "Tous droits réservés.",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation",
+      "legalLink": "Mentions légales"
+    }
+  }
+}
