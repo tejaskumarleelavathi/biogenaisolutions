@@ -15,4 +15,4 @@ Our focus is simple: bridge precision medicine and responsible AI to deliver
 intelligent, personalized solutions that empower life-changing decisions.
 
 Stay tuned — we'll be sharing research, product updates, and perspectives on the
-future of AI in healthcare and life sciences right here. Edited
+future of AI in healthcare and life sciences right here. Edited. Edited again
