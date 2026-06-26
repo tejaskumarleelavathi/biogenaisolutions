@@ -1,0 +1,148 @@
+{
+  "general": {
+    "brandName": "BioGenAI",
+    "brandAccent": "Solutions",
+    "tagline": "Advanced, scalable AI and Bioinformatics solutions for precision medicine and healthcare innovation.",
+    "capabilities": [
+      "Large Language Models",
+      "Retrieval-Augmented Generation",
+      "Agentic AI Systems",
+      "Machine & Deep Learning",
+      "Bioinformatics & Genomics",
+      "Data Engineering"
+    ]
+  },
+  "hero": {
+    "eyebrow": "AI & Bioinformatics for Precision Medicine",
+    "titleLead": "Intelligent",
+    "titleHighlight": "GenAI solutions",
+    "titleTrail": "advancing healthcare & life sciences",
+    "subtitle": "BioGenAI Solutions develops advanced, scalable Artificial Intelligence and Bioinformatics solutions that bridge precision medicine and responsible AI — empowering life-changing decisions and accelerating scientific discovery.",
+    "ctaPrimaryLabel": "Start a Conversation",
+    "ctaSecondaryLabel": "Explore Solutions",
+    "stats": [
+      { "value": "25+", "label": "years software engineering" },
+      { "value": "8+", "label": "years ML & GenAI" },
+      { "value": "HL7", "label": "healthcare interoperability" }
+    ],
+    "tags": ["LLMs & RAG", "Agentic AI", "Genomics", "Deep Learning"]
+  },
+  "solutions": {
+    "eyebrow": "Solutions",
+    "heading": "Solutions built for scientific & clinical impact",
+    "lead": "Scalable, responsible AI tailored to the complex demands of healthcare, biotech, pharma, and research — from raw data to actionable insight.",
+    "items": [
+      { "icon": "precision", "title": "Precision Medicine AI", "description": "Personalized models that translate genomic and clinical data into life-changing, patient-specific decisions." },
+      { "icon": "genomics", "title": "Bioinformatics & Genomics", "description": "Advanced pipelines for sequencing analysis, variant discovery, and computational biology at scale." },
+      { "icon": "llm", "title": "Generative & Agentic AI", "description": "LLM, RAG, and autonomous agent systems that reason over complex scientific and enterprise data." },
+      { "icon": "hl7", "title": "Healthcare Interoperability", "description": "HL7-driven integration that connects systems, streamlines workflows, and improves patient outcomes." },
+      { "icon": "data", "title": "Data Engineering", "description": "Robust, scalable data infrastructure that powers reliable analytics and production ML." },
+      { "icon": "ml", "title": "Machine & Deep Learning", "description": "Predictive and diagnostic models engineered for accuracy, transparency, and real-world deployment." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Consulting that turns complexity into clarity",
+    "lead": "We help healthcare providers, biotech companies, pharmaceutical organizations, research institutions, and enterprises harness AI to accelerate discovery and unlock insight.",
+    "items": [
+      { "number": "01", "title": "AI Strategy & Advisory", "description": "Roadmaps, feasibility, and architecture to deploy responsible AI with measurable ROI." },
+      { "number": "02", "title": "Custom Model Development", "description": "End-to-end design, training, and deployment of ML, deep learning, and GenAI systems." },
+      { "number": "03", "title": "Bioinformatics Engineering", "description": "Genomics pipelines, biostatistics, and computational biology built for scale and rigor." },
+      { "number": "04", "title": "Healthcare Data Integration", "description": "HL7 interoperability and data engineering that unify fragmented clinical systems." }
+    ]
+  },
+  "principles": {
+    "eyebrow": "What drives us",
+    "heading": "Vision, Mission & Philosophy",
+    "visionLabel": "Vision",
+    "missionLabel": "Mission",
+    "philosophyLabel": "Philosophy",
+    "vision": "To revolutionize healthcare and life science by delivering intelligent, personalized GenAI solutions that empower life-changing decisions.",
+    "mission": "Bridging precision medicine and responsible GenAI solutions to deliver personalized healthcare and advance life sciences.",
+    "philosophy": "We build human-first, ethically grounded GenAI that personalizes care, empowers decisions, and fosters collaboration to transform healthcare and life sciences together."
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "A specialized AI, Bioinformatics & Healthcare Technology firm",
+    "paragraphs": [
+      "BioGenAI Solutions is a specialized Artificial Intelligence, Bioinformatics, and Healthcare Technology consulting firm dedicated to transforming healthcare and life sciences through responsible, human-centered innovation.",
+      "We help healthcare providers, biotechnology companies, pharmaceutical organizations, research institutions, and enterprises harness the power of LLMs, RAG, Agentic AI, Machine Learning, Deep Learning, Data Engineering, Bioinformatics, Genomics, and HL7 interoperability to accelerate discovery, improve patient outcomes, and unlock actionable insights from complex data."
+    ],
+    "founderInitials": "EB",
+    "founderName": "Ernest Bonat, Ph.D.",
+    "founderRole": "Founder & Principal — Data Science Professor, Senior AI Engineer, Bioinformatics Scientist",
+    "founderBio": "Over 25 years of software engineering experience and 8+ years developing advanced Machine Learning, Generative AI, Agentic AI, Biostatistics, Bioinformatics, and Computational Biology solutions.",
+    "stats": [
+      { "value": "25+", "label": "Years of software engineering" },
+      { "value": "8+", "label": "Years of ML & Generative AI" },
+      { "value": "5", "label": "Industries served" },
+      { "value": "24h", "label": "Response time commitment" }
+    ]
+  },
+  "research": {
+    "eyebrow": "Research",
+    "heading": "Published research & thought leadership",
+    "lead": "Peer perspectives on AI, biostatistics, bioinformatics, and computational biology.",
+    "items": [
+      { "tag": "Medium · Article", "title": "Artificial Intelligence Applications in Biostatistics, Bioinformatics and Computational Biology", "author": "By Ernest Bonat, Ph.D.", "url": "https://ernest-bonat.medium.com/machine-learning-applications-in-genomics-life-sciences-by-ernest-bonat-ph-d-83598e67ccbc" }
+    ],
+    "comingSoonTag": "Coming soon",
+    "comingSoonTitle": "More publications on GenAI & precision medicine",
+    "comingSoonText": "New research is published regularly."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Send us a message",
+    "lead": "Fill out the form and our team will get back to you within 24 hours.",
+    "email": "ernest.bonat@biogenaisolutions.com",
+    "responseTime": "Response within 24 hours",
+    "interests": [
+      "Precision Medicine AI",
+      "Bioinformatics & Genomics",
+      "Generative & Agentic AI",
+      "Healthcare Interoperability (HL7)",
+      "Data Engineering",
+      "Machine & Deep Learning",
+      "AI Strategy & Advisory",
+      "Other"
+    ],
+    "disclaimer": "At BioGenAI Solutions, we value your trust and are committed to maintaining the confidentiality and security of your information. Any information submitted through our website is used exclusively to respond to your requests, provide professional consulting services, and keep you informed about relevant developments in Artificial Intelligence, Biostatistics, Bioinformatics, Precision Medicine, Healthcare Technology, and Life Sciences. You may unsubscribe from communications at any time. Please review our Privacy Policy to learn more about our data protection and privacy practices."
+  },
+  "ui": {
+    "nav": { "home": "Home", "solutions": "Solutions", "services": "Services", "research": "Research", "news": "News", "about": "About", "contact": "Contact", "contactCta": "Contact Us" },
+    "capabilitiesLabel": "Core capabilities",
+    "readPaper": "Read the paper",
+    "readMore": "Read more",
+    "newsHeading": "Latest from BioGenAI Solutions",
+    "newsLead": "Announcements and developments across AI, precision medicine, and life sciences.",
+    "newsEmptyTitle": "Updates are on the way",
+    "newsEmptyText": "We're preparing announcements about our latest solutions and research. Check back soon — or get in touch to stay informed.",
+    "newsKeepUpdated": "Keep me updated",
+    "backToNews": "← Back to News",
+    "backToHome": "← Back to Home",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "jobTitle": "Job Title",
+      "company": "Company",
+      "interest": "Interested in",
+      "interestPlaceholder": "Select an option",
+      "comments": "Comments",
+      "commentsPlaceholder": "Tell us about your project or question…",
+      "recaptcha": "Protected by reCAPTCHA",
+      "submit": "Submit",
+      "success": "Thank you — your message has been prepared. We'll respond within 24 hours."
+    },
+    "footer": {
+      "explore": "Explore",
+      "company": "Company",
+      "legal": "Legal",
+      "visionMission": "Vision & Mission",
+      "rights": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "legalLink": "Legal"
+    }
+  }
+}

@@ -5,25 +5,25 @@
 # ============================================================
 
 backend:
-  name: git-gateway          # Netlify Identity + Git Gateway (set up in Netlify)
-  branch: main               # branch the CMS writes to
+  name: git-gateway          # Netlify Identity + Git Gateway
+  branch: main
 
 # For local editing: run `npx decap-server` and `npm run dev`,
-# then open http://localhost:4321/admin (Decap connects to the local proxy).
+# then open http://localhost:4321/admin/index.html
 local_backend: true
 
-media_folder: "public/uploads"   # where uploaded files are stored in the repo
-public_folder: "/uploads"        # how they are referenced on the site
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
-publish_mode: editorial_workflow  # draft → review → publish
+publish_mode: editorial_workflow
 
-site_url: https://www.biogenaisolutions.com
-display_url: https://www.biogenaisolutions.com
+site_url: https://biogenaisolutions.netlify.app
+display_url: https://biogenaisolutions.netlify.app
 logo_url: /logo.png
 
 collections:
   # ---------------------------------------------------------
-  # NEWS — clients can create, edit, and publish articles
+  # NEWS — create / edit / publish articles (per language)
   # ---------------------------------------------------------
   - name: news
     label: News Articles
@@ -36,137 +36,215 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
-      - { label: Summary, name: summary, widget: text, hint: "Short teaser shown on the News section cards." }
+      - label: Language
+        name: lang
+        widget: select
+        default: en
+        options:
+          - { label: English, value: en }
+          - { label: Spanish, value: es }
+          - { label: French, value: fr }
+          - { label: German, value: de }
+          - { label: Arabic, value: ar }
+      - { label: Summary, name: summary, widget: text, hint: "Short teaser shown on the News cards." }
       - { label: Featured Image, name: thumbnail, widget: image, required: false }
       - { label: Draft, name: draft, widget: boolean, default: false, hint: "Keep ON to hide from the live site." }
       - { label: Body, name: body, widget: markdown }
 
   # ---------------------------------------------------------
-  # SITE CONTENT — editable text/data for the landing page
+  # SITE CONTENT — one editable file per language.
+  # Field definitions are shared via a YAML anchor (&site_fields)
+  # so every language uses the exact same structure.
   # ---------------------------------------------------------
   - name: site
     label: Site Content
     editor:
       preview: false
     files:
-      - name: general
-        label: General & Branding
-        file: "src/content/site/general.json"
-        fields:
-          - { label: Brand Name, name: brandName, widget: string }
-          - { label: Brand Accent (e.g. “Solutions”), name: brandAccent, widget: string }
-          - { label: Footer Tagline, name: tagline, widget: text }
-          - label: Core Capabilities
-            name: capabilities
-            widget: list
-            hint: "Shown in the capabilities strip below the hero."
-
-      - name: hero
-        label: Hero Section
-        file: "src/content/site/hero.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Title — Lead, name: titleLead, widget: string }
-          - { label: Title — Highlight (gradient), name: titleHighlight, widget: string }
-          - { label: Title — Trailing, name: titleTrail, widget: string }
-          - { label: Subtitle, name: subtitle, widget: text }
-          - { label: Primary Button Label, name: ctaPrimaryLabel, widget: string }
-          - { label: Primary Button Link, name: ctaPrimaryHref, widget: string, default: "#contact" }
-          - { label: Secondary Button Label, name: ctaSecondaryLabel, widget: string }
-          - { label: Secondary Button Link, name: ctaSecondaryHref, widget: string, default: "#solutions" }
-          - label: Hero Stats
-            name: stats
-            widget: list
+      - name: en
+        label: "🇬🇧 English"
+        file: "src/content/i18n/en.json"
+        fields: &site_fields
+          - label: General & Branding
+            name: general
+            widget: object
             fields:
-              - { label: Value, name: value, widget: string }
-              - { label: Label, name: label, widget: string }
-          - { label: Floating Tags, name: tags, widget: list }
-
-      - name: solutions
-        label: Solutions Section
-        file: "src/content/site/solutions.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Lead, name: lead, widget: text }
-          - label: Solution Cards
-            name: items
-            widget: list
+              - { label: Brand Name, name: brandName, widget: string }
+              - { label: Brand Accent, name: brandAccent, widget: string }
+              - { label: Footer Tagline, name: tagline, widget: text }
+              - { label: Core Capabilities, name: capabilities, widget: list }
+          - label: Hero
+            name: hero
+            widget: object
             fields:
-              - label: Icon
-                name: icon
-                widget: select
-                options: [precision, genomics, llm, hl7, data, ml]
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-
-      - name: services
-        label: Services Section
-        file: "src/content/site/services.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Lead, name: lead, widget: text }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: "Title — Lead", name: titleLead, widget: string }
+              - { label: "Title — Highlight (gradient)", name: titleHighlight, widget: string }
+              - { label: "Title — Trailing", name: titleTrail, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - { label: Primary Button Label, name: ctaPrimaryLabel, widget: string }
+              - { label: Secondary Button Label, name: ctaSecondaryLabel, widget: string }
+              - label: Stats
+                name: stats
+                widget: list
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+              - { label: Floating Tags, name: tags, widget: list }
+          - label: Solutions
+            name: solutions
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Lead, name: lead, widget: text }
+              - label: Cards
+                name: items
+                widget: list
+                fields:
+                  - { label: Icon, name: icon, widget: select, options: [precision, genomics, llm, hl7, data, ml] }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
           - label: Services
-            name: items
-            widget: list
+            name: services
+            widget: object
             fields:
-              - { label: Number, name: number, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-
-      - name: principles
-        label: Vision / Mission / Philosophy
-        file: "src/content/site/principles.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Vision, name: vision, widget: text }
-          - { label: Mission, name: mission, widget: text }
-          - { label: Philosophy, name: philosophy, widget: text }
-
-      - name: about
-        label: About Section
-        file: "src/content/site/about.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Paragraphs, name: paragraphs, widget: list }
-          - { label: Founder Initials, name: founderInitials, widget: string }
-          - { label: Founder Name, name: founderName, widget: string }
-          - { label: Founder Role, name: founderRole, widget: text }
-          - { label: Founder Bio, name: founderBio, widget: text }
-          - label: Stats
-            name: stats
-            widget: list
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Lead, name: lead, widget: text }
+              - label: Services
+                name: items
+                widget: list
+                fields:
+                  - { label: Number, name: number, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+          - label: Vision / Mission / Philosophy
+            name: principles
+            widget: object
             fields:
-              - { label: Value, name: value, widget: string }
-              - { label: Label, name: label, widget: string }
-
-      - name: research
-        label: Research Section
-        file: "src/content/site/research.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Lead, name: lead, widget: text }
-          - label: Publications
-            name: items
-            widget: list
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Vision Label, name: visionLabel, widget: string }
+              - { label: Mission Label, name: missionLabel, widget: string }
+              - { label: Philosophy Label, name: philosophyLabel, widget: string }
+              - { label: Vision, name: vision, widget: text }
+              - { label: Mission, name: mission, widget: text }
+              - { label: Philosophy, name: philosophy, widget: text }
+          - label: About
+            name: about
+            widget: object
             fields:
-              - { label: Tag, name: tag, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Author, name: author, widget: string }
-              - { label: URL, name: url, widget: string }
-
-      - name: contact
-        label: Contact Section
-        file: "src/content/site/contact.json"
-        fields:
-          - { label: Eyebrow, name: eyebrow, widget: string }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Lead, name: lead, widget: text }
-          - { label: Contact Email, name: email, widget: string }
-          - { label: Response Time Note, name: responseTime, widget: string }
-          - { label: "Interested In — Options", name: interests, widget: list }
-          - { label: Disclaimer, name: disclaimer, widget: text }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list }
+              - { label: Founder Initials, name: founderInitials, widget: string }
+              - { label: Founder Name, name: founderName, widget: string }
+              - { label: Founder Role, name: founderRole, widget: text }
+              - { label: Founder Bio, name: founderBio, widget: text }
+              - label: Stats
+                name: stats
+                widget: list
+                fields:
+                  - { label: Value, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+          - label: Research
+            name: research
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Lead, name: lead, widget: text }
+              - label: Publications
+                name: items
+                widget: list
+                fields:
+                  - { label: Tag, name: tag, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Author, name: author, widget: string }
+                  - { label: URL, name: url, widget: string }
+              - { label: "Coming-soon Tag", name: comingSoonTag, widget: string }
+              - { label: "Coming-soon Title", name: comingSoonTitle, widget: string }
+              - { label: "Coming-soon Text", name: comingSoonText, widget: string }
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Lead, name: lead, widget: text }
+              - { label: Contact Email, name: email, widget: string }
+              - { label: Response Time Note, name: responseTime, widget: string }
+              - { label: "Interested-in Options", name: interests, widget: list }
+              - { label: Disclaimer, name: disclaimer, widget: text }
+          - label: UI Labels
+            name: ui
+            widget: object
+            collapsed: true
+            fields:
+              - label: Navigation
+                name: nav
+                widget: object
+                fields:
+                  - { label: Home, name: home, widget: string }
+                  - { label: Solutions, name: solutions, widget: string }
+                  - { label: Services, name: services, widget: string }
+                  - { label: Research, name: research, widget: string }
+                  - { label: News, name: news, widget: string }
+                  - { label: About, name: about, widget: string }
+                  - { label: Contact, name: contact, widget: string }
+                  - { label: Contact CTA, name: contactCta, widget: string }
+              - { label: Capabilities Label, name: capabilitiesLabel, widget: string }
+              - { label: "Read the paper", name: readPaper, widget: string }
+              - { label: "Read more", name: readMore, widget: string }
+              - { label: News Heading, name: newsHeading, widget: string }
+              - { label: News Lead, name: newsLead, widget: string }
+              - { label: News Empty Title, name: newsEmptyTitle, widget: string }
+              - { label: News Empty Text, name: newsEmptyText, widget: text }
+              - { label: News Keep-updated Button, name: newsKeepUpdated, widget: string }
+              - { label: Back to News, name: backToNews, widget: string }
+              - { label: Back to Home, name: backToHome, widget: string }
+              - label: Contact Form
+                name: form
+                widget: object
+                fields:
+                  - { label: First Name, name: firstName, widget: string }
+                  - { label: Last Name, name: lastName, widget: string }
+                  - { label: Email, name: email, widget: string }
+                  - { label: Job Title, name: jobTitle, widget: string }
+                  - { label: Company, name: company, widget: string }
+                  - { label: Interested in, name: interest, widget: string }
+                  - { label: Interest Placeholder, name: interestPlaceholder, widget: string }
+                  - { label: Comments, name: comments, widget: string }
+                  - { label: Comments Placeholder, name: commentsPlaceholder, widget: string }
+                  - { label: reCAPTCHA Note, name: recaptcha, widget: string }
+                  - { label: Submit, name: submit, widget: string }
+                  - { label: Success Message, name: success, widget: text }
+              - label: Footer
+                name: footer
+                widget: object
+                fields:
+                  - { label: Explore, name: explore, widget: string }
+                  - { label: Company, name: company, widget: string }
+                  - { label: Legal Heading, name: legal, widget: string }
+                  - { label: Vision & Mission, name: visionMission, widget: string }
+                  - { label: Rights, name: rights, widget: string }
+                  - { label: Privacy, name: privacy, widget: string }
+                  - { label: Terms, name: terms, widget: string }
+                  - { label: Legal Link, name: legalLink, widget: string }
+      - name: es
+        label: "🇪🇸 Español"
+        file: "src/content/i18n/es.json"
+        fields: *site_fields
+      - name: fr
+        label: "🇫🇷 Français"
+        file: "src/content/i18n/fr.json"
+        fields: *site_fields
+      - name: de
+        label: "🇩🇪 Deutsch"
+        file: "src/content/i18n/de.json"
+        fields: *site_fields
+      - name: ar
+        label: "🇸🇦 العربية"
+        file: "src/content/i18n/ar.json"
+        fields: *site_fields
