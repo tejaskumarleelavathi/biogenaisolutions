@@ -90,9 +90,8 @@ news = news.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section class="section section-services-split" id="services">
-    <div class="services-top-bg">
+    <div class="services-top-bg" style={c.services.backgroundImage ? `background-image: url(${c.services.backgroundImage});` : null}>
       <div class="services-top-overlay" aria-hidden="true"></div>
       <div class="container services-header-container">
         <div class="section-head">
